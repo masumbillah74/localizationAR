@@ -9,14 +9,14 @@
 - Create virtualenv: virtualenv virtualenv_name
 - Activate virtualenv: source virtualenv_name/bin/activate
 
-- Install jupyter notebook:
-	pip install jupyter notebook
-- Open jupyter notebook:
+- Install jupyter notebook: <br/>
+	pip install jupyter notebook <br/>
+- Open jupyter notebook:<br/>
 	jupyter notebook
 
-- Install dependencies:
-	pip install pyserial
-	pip install pandas
-	pip install pyargus
-	pip install matplotlib
-  pip install seaborn
+- Install dependencies:<br/>
+	pip install pyserial <br/>
+	pip install pandas <br/>
+	pip install pyargus <br/>
+	pip install matplotlib <br/>
+ 	pip install seaborn <br/>
