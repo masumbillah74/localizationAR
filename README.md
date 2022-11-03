@@ -20,3 +20,22 @@
 	pip install pyargus <br/>
 	pip install matplotlib <br/>
  	pip install seaborn <br/>
+
+- Install J-Link Software and Documentation Pack  <br/>
+
+	https://www.segger.com/downloads/jlink
+
+- Download the nRF command line tool:<br/>
+	https://infocenter.nordicsemi.com/index.jsp?topic=%2Fug_nrf_cltools%2FUG%2Fcltools%2Fnrf_installation.html
+	<br/>
+	
+	Add to PATH: <br/>
+	export PATH="<parent_directory>/nrf-command-line-tools/bin:$PATH"
+- Install cmake <br/>
+https://cmake.org/download/
+<br/>
+Add to PATH: <br/>
+export PATH="<cmake_parent_directory>/bin:$PATH"
+
+- Install west <br/>
+	pip install west
