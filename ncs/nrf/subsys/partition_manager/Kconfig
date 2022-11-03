@@ -1,0 +1,69 @@
+#
+# Copyright (c) 2020 Nordic Semiconductor ASA
+#
+# SPDX-License-Identifier: LicenseRef-BSD-5-Clause-Nordic
+#
+
+menu "Partition Manager"
+
+menu "Zephyr subsystem configurations"
+
+if FILE_SYSTEM_LITTLEFS
+partition=LITTLEFS
+partition-size=0x6000
+rsource "Kconfig.template.partition_size"
+endif
+
+
+if SETTINGS
+partition=SETTINGS_STORAGE
+partition-size=0x2000
+rsource "Kconfig.template.partition_size"
+endif
+
+if NVS && !SETTINGS_NVS
+partition=NVS_STORAGE
+partition-size=0x6000
+rsource "Kconfig.template.partition_size"
+endif
+
+if ZIGBEE
+partition=ZBOSS_NVRAM
+partition-size=0x8000
+rsource "Kconfig.template.partition_size"
+
+partition=ZBOSS_PRODUCT_CONFIG
+partition-size=0x1000
+rsource "Kconfig.template.partition_size"
+endif
+
+endmenu
+
+config PM_SINGLE_IMAGE
+	bool "Use the Partition Manager for single image builds"
+	help
+	  Use the Partition Manager feature to partition the device even if
+	  only a single image is included in the build.
+
+menuconfig PM_EXTERNAL_FLASH
+	bool "Support external flash in Partition Manager"
+
+if PM_EXTERNAL_FLASH
+
+config PM_EXTERNAL_FLASH_DEV_NAME
+	 string "Name of the external flash device"
+	help
+	  Must match the 'drv_name' argument used when initializing the
+	  driver for the external flash through the 'DEVICE...INIT'
+	  function call. The value is used when calling 'device_get_binding'.
+
+config PM_EXTERNAL_FLASH_SIZE
+	hex "External flash size (in bytes)"
+
+config PM_EXTERNAL_FLASH_BASE
+	hex "External flash base address"
+	default 0
+
+endif
+
+endmenu # Partition Manager

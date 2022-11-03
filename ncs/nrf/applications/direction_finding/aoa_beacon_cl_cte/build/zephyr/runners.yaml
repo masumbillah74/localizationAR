@@ -1,0 +1,49 @@
+# Available runners configured by board.cmake.
+runners:
+- nrfjprog
+- jlink
+- pyocd
+- openocd
+
+# Default flash runner if --runner is not given.
+flash-runner: nrfjprog
+
+# Default debug runner if --runner is not given.
+debug-runner: jlink
+
+# Default command line arguments. The ones in "common" are always given.
+# The other sub-keys give runner-specific arguments.
+args:
+  common:
+  - --board-dir=/home/rabbi/Desktop/RL_OCC/AoA/iq_samples_collect_ncs_07_08_2020/ncs/zephyr/boards/arm/nrf52833dk_nrf52833
+  - --elf-file=/home/rabbi/Desktop/RL_OCC/AoA/iq_samples_collect_ncs_07_08_2020/ncs/nrf/applications/direction_finding/aoa_beacon_cl_cte/build/zephyr/zephyr.elf
+  - --hex-file=/home/rabbi/Desktop/RL_OCC/AoA/iq_samples_collect_ncs_07_08_2020/ncs/nrf/applications/direction_finding/aoa_beacon_cl_cte/build/zephyr/zephyr.hex
+  - --bin-file=/home/rabbi/Desktop/RL_OCC/AoA/iq_samples_collect_ncs_07_08_2020/ncs/nrf/applications/direction_finding/aoa_beacon_cl_cte/build/zephyr/zephyr.bin
+  - --gdb=/home/rabbi/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb
+  - --openocd=/home/rabbi/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/openocd
+  - --openocd-search=/home/rabbi/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/share/openocd/scripts
+  nrfjprog:
+    - --nrf-family=NRF52
+  jlink:
+    - --dt-flash=y
+    - --device=nrf52
+    - --speed=4000
+  pyocd:
+    - --dt-flash=y
+    - --target=nrf52833
+    - --frequency=4000000
+  openocd:
+    - --cmd-load
+    - flash write_image erase
+    - --cmd-verify
+    - verify_image
+    - --cmd-pre-init
+    - set WORKAREASIZE 0x4000
+    - --cmd-pre-init
+    - source [find interface/jlink.cfg]
+    - --cmd-pre-init
+    - transport select swd
+    - --cmd-pre-init
+    - source [find target/nrf52.cfg]
+    - --cmd-pre-init
+    - $_TARGETNAME configure -rtos auto

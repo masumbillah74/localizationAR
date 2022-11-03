@@ -1,0 +1,26 @@
+#
+# Copyright (c) 2018 Nordic Semiconductor ASA
+#
+# SPDX-License-Identifier: LicenseRef-BSD-5-Clause-Nordic
+#
+
+menu "Aoa Locator Connectionless CTE"
+
+config AOA_LOCATOR_UART_PORT
+	string "Name of the UART port"
+	default "UART_0"
+
+config AOA_LOCATOR_DATA_SEND_WAIT_MS
+	int "Number of miliseconds to wait after data is sent over UART."
+	default 40
+	range 1 100
+	help
+		The time to wait after a data packet is send.
+		It is here because of the PC tool limitations,
+		to give it a time for data processing before sending next packet.
+
+endmenu
+
+menu "Zephyr Kernel"
+source "$ZEPHYR_BASE/Kconfig.zephyr"
+endmenu

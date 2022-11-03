@@ -1,0 +1,12 @@
+{
+	"files.associations": {
+		"aoa_data.h": "c",
+		"aoa.h": "c",
+		"pdda.h": "c",
+		"quaternion.h": "c",
+		"functional": "c",
+		"df_data.h": "c",
+		"nrfx.h": "c",
+		"types.h": "c"
+	}
+}

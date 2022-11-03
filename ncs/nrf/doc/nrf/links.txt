@@ -1,0 +1,403 @@
+.. ### Links to Zephyr
+
+.. _`Zephyr`: https://zephyrproject.org/
+
+.. _`Zephyr Project documentation`: https://docs.zephyrproject.org/
+
+.. _`official Zephyr repository`: https://github.com/zephyrproject-rtos/zephyr
+.. _`Zephyr repository`: https://github.com/zephyrproject-rtos/zephyr
+
+.. ### Links to MCUboot
+
+.. _`MCUboot`: https://mcuboot.com
+.. _`MCUboot repository`: https://github.com/JuulLabs-OSS/mcuboot
+
+.. ### Link to the NCS repositories
+
+.. |ncs_repo| replace:: https://github.com/nrfconnect/sdk-nrf
+.. _`sdk-nrf`: https://github.com/nrfconnect/sdk-nrf
+
+.. _`sdk-zephyr`: https://github.com/nrfconnect/sdk-zephyr
+
+.. _`sdk-mcuboot`: https://github.com/nrfconnect/sdk-mcuboot
+
+.. |ncs_nrfxlib_repo| replace:: https://github.com/nrfconnect/nrfxlib
+.. _`nrfxlib`: https://github.com/nrfconnect/nrfxlib
+
+.. _`change log`: https://github.com/nrfconnect/sdk-nrf/wiki/Changelog
+
+.. _`Known issues`: https://github.com/nrfconnect/sdk-nrf/wiki/Known-issues
+
+.. ### Links to Nordic documentation
+
+.. _`nRF Connect SDK v1.3.0 documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.3.0/nrf/index.html
+
+.. _`nRF Connect SDK v1.2.1 documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.1/nrf/index.html
+
+.. _`nRF Connect SDK v1.2.0 documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.0/nrf/index.html
+
+.. _`nRF Connect SDK v1.1.0 documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.1.0/nrf/index.html
+
+.. _`nRF Connect SDK v1.0.0 documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.0.0/nrf/index.html
+
+.. _`nRF Connect SDK v0.4.0 documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/0.4.0/nrf/index.html
+
+.. _`nRF Connect SDK v0.3.0 documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/0.3.0/nrf/index.html
+
+.. _`nRF Connect SDK latest documentation`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/index.html
+
+
+.. _`LTE Link Monitor`: https://infocenter.nordicsemi.com/topic/ug_link_monitor/UG/link_monitor/lm_intro.html
+
+.. _`nRF Connect Programmer`: https://infocenter.nordicsemi.com/topic/ug_nc_programmer/UG/nrf_connect_programmer/ncp_introduction.html
+
+.. _`Updating the nRF9160 DK cellular modem`: https://infocenter.nordicsemi.com/topic/ug_nc_programmer/UG/nrf_connect_programmer/ncp_updating_modem_nrf9160dk.html
+
+.. _`nRF9160 DK board control section in the nRF9160 DK User Guide`: https://infocenter.nordicsemi.com/topic/ug_nrf91_dk/UG/nrf91_DK/board_controller.html
+
+.. _`band lock section in the AT Commands reference document`: https://infocenter.nordicsemi.com/topic/ref_at_commands/REF/at_commands/mob_termination_ctrl_status/xbandlock.html
+
+.. _`Device programming section in the nRF9160 DK User Guide`: https://infocenter.nordicsemi.com/topic/ug_nrf91_dk/UG/nrf91_DK/mcu_device_programming.html
+
+.. _`AT Commands Reference Guide`: https://infocenter.nordicsemi.com/topic/ref_at_commands/REF/at_commands/intro.html
+
+.. _`system mode section in the AT Commands reference document`: https://infocenter.nordicsemi.com/topic/ref_at_commands/REF/at_commands/mob_termination_ctrl_status/xsystemmode.html
+
+.. _`Credential storage management %CMNG`: https://infocenter.nordicsemi.com/topic/ref_at_commands/REF/at_commands/mob_termination_ctrl_status/cmng.html
+.. _`nRF5340 Product Specification`: https://infocenter.nordicsemi.com/topic/ps_nrf5340/keyfeatures_html5.html
+
+.. _`System OFF mode`: https://infocenter.nordicsemi.com/topic/ps_nrf52840/power.html#unique_1227688711
+.. _`Programming DK boards using nrfjprog`: https://infocenter.nordicsemi.com/topic/ug_nrf5x_cltools/UG/cltools/nrf5x_nrfjprogexe.html
+.. _`Nordic Thingy:91 User Guide`: https://infocenter.nordicsemi.com/topic/ug_thingy91/UG/thingy91/intro/frontpage.html
+
+.. _`Programming applications on Nordic Thingy:91`: https://infocenter.nordicsemi.com/topic/ug_nc_programmer/UG/nrf_connect_programmer/ncp_programming_appln_thingy91.html
+
+
+.. _`Programming the Thingy:91 modem`: https://infocenter.nordicsemi.com/topic/ug_nc_programmer/UG/nrf_connect_programmer/ncp_updating_modem_thingy91_intro.html
+
+.. _`nRF52 Series`: https://infocenter.nordicsemi.com/topic/struct_nrf52/struct/nrf52.html
+
+.. _`Wi-Fi coexistence documentation`: https://infocenter.nordicsemi.com/topic/15.4_radio_driver_v2.0.0-1.prealpha/rd_coex.html
+.. _`PA/LNA module documentation`: https://infocenter.nordicsemi.com/topic/15.4_radio_driver_v2.0.0-1.prealpha/rd_fem.html
+.. _`antenna diversity documentation`: https://infocenter.nordicsemi.com/topic/15.4_radio_driver_v2.0.0-1.prealpha/ant_diversity.html
+
+.. _`anomaly 19`: https://infocenter.nordicsemi.com/topic/errata_nRF5340_EngA/ERR/nRF5340/EngineeringA/latest/anomaly_340_19.html
+
+.. ### Links to the Nordic website
+
+.. _`Nordic Semiconductor website`: https://www.nordicsemi.com/
+
+.. _`DevZone`: https://devzone.nordicsemi.com/
+
+.. _`Enabling and testing TLS in mqtt_simple`: https://devzone.nordicsemi.com/nordic/nordic-blog/b/blog/posts/enabling-and-testing-tls-in-mqtt_5f00_simple
+
+.. _`nRF9160 DK product page`: https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF9160-DK/Download#infotabs
+
+.. _`SUPL client download`: https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF9160-DK/Download#supl-c
+
+.. _`nRF9160 product website`: https://www.nordicsemi.com/Products/Low-power-cellular-IoT/nRF9160-SiP
+
+.. _`nRF9160 product website (compatible downloads)`: https://www.nordicsemi.com/Products/Low-power-cellular-IoT/nRF9160/Download#infotabs
+
+.. _`nRF9160 Certifications`: https://www.nordicsemi.com/Products/Low-power-Cellular-IoT/nRF9160-Certifications
+
+.. _`Nordic Thingy:52`: https://www.nordicsemi.com/Software-and-tools/Prototyping-platforms/Nordic-Thingy-52
+
+.. _`Thingy:91 product page`: https://www.nordicsemi.com/Software-and-tools/Prototyping-platforms/Nordic-Thingy-91
+
+.. _`Thingy:91 product website (downloads)`: https://www.nordicsemi.com/Software-and-tools/Prototyping-platforms/Nordic-Thingy-91/Download#infotabs
+
+.. _`Energy efficiency` : https://www.nordicsemi.com/Products/Low-power-cellular-IoT#Cellular-performance-for-the-IoT
+
+.. _`nRF Connect for Cloud Certificate Update`: https://devzone.nordicsemi.com/nordic/cellular-iot-guides/b/getting-started-cellular/posts/nrf-cloud-certificate-update
+
+.. _`nRF21540 DK product page`: https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF21540
+
+.. ### Links to Nordic software
+
+.. _`nRF Command Line Tools`:
+.. _`nRF5x Command Line Tools`:
+.. _`nRF5x Command Line Tools Linux 32`:
+.. _`nRF5x Command Line Tools Linux 64`:
+.. _`nRF5x Command Line Tools Windows 32`:
+.. _`nRF5x Command Line Tools Windows 64`:
+.. _`nRF5x Command Line Tools OSX`: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Command-Line-Tools
+
+.. _`nRF Connect for Desktop`: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop
+.. _`Download nRF Connect for Desktop`: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-desktop/Download#infotabs
+
+.. _`nRF Connect for Mobile`: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Connect-for-mobile
+
+.. _`nRF Blinky`: https://github.com/NordicSemiconductor/Android-nRF-Blinky
+
+.. _`nRF Toolbox`: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Toolbox
+
+.. _`nrfx`: https://github.com/NordicSemiconductor/nrfx/
+
+.. _`Changelog for nrfx 2.2.0`: https://github.com/NordicSemiconductor/nrfx/blob/master/CHANGELOG.md#220---2020-04-28
+
+.. _`nRF Thread Topology Monitor`: https://infocenter.nordicsemi.com/topic/sdk_tz_v4.1.0/thread_topology_monitor.html
+
+.. _`nRF Sniffer for 802.15.4 based on nRF52840 with Wireshark`: https://infocenter.nordicsemi.com/topic/sdk_tz_v4.1.0/nrf802154_sniffer.html
+
+.. ### Links to Nordic mobile applications
+
+.. _`nRF Mesh mobile app`: https://www.nordicsemi.com/Software-and-Tools/Development-Tools/nRF-Mesh
+.. _`nRF Mesh mobile app for iOS`: https://itunes.apple.com/us/app/nrf-mesh/id1380726771?mt=8
+.. _`nRF Mesh mobile app for Android`: https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfmeshprovisioner
+
+
+.. ### Links to other websites and software
+
+.. _`Git`: https://git-scm.com/
+
+.. _`GitHub`: https://github.com/
+
+.. _`GitHub fork`: https://help.github.com/en/articles/fork-a-repo
+
+.. _`GitHub duplicate`: https://help.github.com/en/articles/duplicating-a-repository
+
+.. _`nRF Cloud`: https://nrfcloud.com/
+
+.. _`openSSL`: https://www.openssl.org/
+
+.. _`GNU Arm Embedded Toolchain`: https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+
+.. _`J-Link Software and Documentation Pack`: https://www.segger.com/downloads/jlink
+
+.. _`SEGGER Embedded Studio (Nordic Edition) - Windows x86`: https://segger.com/downloads/embedded-studio/embeddedstudio_arm_nordic_win_x86
+.. _`SEGGER Embedded Studio (Nordic Edition) - Windows x64`: https://segger.com/downloads/embedded-studio/embeddedstudio_arm_nordic_win_x64
+.. _`SEGGER Embedded Studio (Nordic Edition) - Mac OS x64`: https://segger.com/downloads/embedded-studio/embeddedstudio_arm_nordic_macos
+.. _`SEGGER Embedded Studio (Nordic Edition) - Linux x86`: https://segger.com/downloads/embedded-studio/embeddedstudio_arm_nordic_linux_x86
+.. _`SEGGER Embedded Studio (Nordic Edition) - Linux x64`: https://segger.com/downloads/embedded-studio/embeddedstudio_arm_nordic_linux_x64
+
+.. _`HID usage tables`: https://www.usb.org/hid
+
+.. _`SEGGER SystemView`: https://www.segger.com/products/development-tools/systemview/
+
+.. _`CMock`: https://www.throwtheswitch.org/cmock
+
+.. _`Unity`: https://www.throwtheswitch.org/unity
+
+.. _`MCUmgr`: https://github.com/apache/mynewt-mcumgr
+
+.. _`SMP over Bluetooth`: https://github.com/apache/mynewt-mcumgr/blob/master/transport/smp-bluetooth.md
+
+.. _`Breathe issue #437`: https://github.com/michaeljones/breathe/issues/437
+.. _`Breathe issue #438`: https://github.com/michaeljones/breathe/issues/438
+.. _`Sphinx parser issue`: https://github.com/sphinx-doc/sphinx/issues/2683
+
+.. _`HIDAPI library`: https://github.com/libusb/hidapi
+.. _`HIDAPI releases`: https://github.com/libusb/hidapi/releases
+.. _`pyhidapi Python wrapper`: https://github.com/apmorton/pyhidapi
+
+.. _`AWS account`: https://aws.amazon.com/iot/
+.. _`AWS IoT console`: https://console.aws.amazon.com/iot/home
+.. _`AWS S3 console`: https://console.aws.amazon.com/s3/home
+
+.. _`TLS`: https://www.ietf.org/rfc/rfc5246.txt
+
+.. _`OpenAMP`: https://github.com/OpenAMP/open-amp/
+
+.. _`RPMsg`: https://github.com/OpenAMP/open-amp/wiki/RPMsg-Messaging-Protocol
+
+.. _`SSL Labs`: https://www.ssllabs.com/ssltest/
+
+.. _`GNSS`: https://en.wikipedia.org/wiki/Satellite_navigation
+.. _`GPS`: https://en.wikipedia.org/wiki/Global_Positioning_System
+.. _`A-GPS`: https://en.wikipedia.org/wiki/Assisted_GPS
+.. _`NMEA`: https://www.gpsworld.com/what-exactly-is-gps-nmea-data/
+
+.. _`EnOcean`: https://www.enocean.com
+.. _`Easyfit Single/Double Rocker Wall Switch for BLE - EWSSB/EWSDB`: https://www.enocean.com/en/products/enocean_modules_24ghz_ble/easyfit-single-double-rocker-wall-switch-for-ble-ewssb-ewsdb
+.. _`Easyfit Single/Double Rocker Pad for BLE - ESRPB/EDRPB`: https://www.enocean.com/en/products/enocean_modules_24ghz_ble/easyfit-single-double-rocker-pad-for-ble-esrpb-edrpb
+.. _`Easyfit Motion Detector with Illumination Sensor - EMDCB`: https://www.enocean.com/en/products/enocean_modules_24ghz_ble/easyfit-motion-detector-with-illumination-sensor-emdcb
+
+.. _`ISO/IEC 7816-4`: https://www.iso.org/standard/54550.html
+
+.. _`BH1749NUC-E`: https://www.rohm.com/datasheet/BH1749NUC/bh1749nuc-e
+
+.. _`JSON`: https://www.json.org/json-en.html
+
+.. _`Setting up an AWS account`: https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/
+
+.. _`mscgen`: http://www.mcternan.me.uk/mscgen/
+
+.. ### Links to Bluetooth specs
+
+.. _`Bluetooth Core Specification`: https://www.bluetooth.com/specifications/bluetooth-core-specification
+
+.. _`HID Service Specification`: https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245140
+
+.. _`Battery Service Specification`: https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245138
+
+.. ### Links to Bluetooth Mesh
+
+.. _`Mesh Model Specification`: https://www.bluetooth.com/specifications/mesh-specifications/
+
+.. _`Bluetooth Mesh Profile Specification`: https://www.bluetooth.com/specifications/mesh-specifications/
+
+.. _`Mesh Model Overview`: https://www.bluetooth.com/bluetooth-resources/bluetooth-mesh-models/
+
+.. _`Bluetooth Mesh Glossary`: https://www.bluetooth.com/learn-about-bluetooth/bluetooth-technology/topology-options/le-mesh/mesh-glossary/
+
+.. _`Bluetooth Mesh FAQ`: https://www.bluetooth.com/learn-about-bluetooth/bluetooth-technology/topology-options/le-mesh/mesh-faq/
+
+.. _`Bluetooth Mesh Study Guide`: https://www.bluetooth.com/bluetooth-resources/bluetooth-mesh-developer-study-guide/
+
+
+.. ### Links to NFC specs
+
+.. _`Bluetooth Secure Simple Pairing Using NFC`: https://www.bluetooth.com/bluetooth-resources/bluetooth-secure-simple-pairing-using-nfc-application-document/
+
+.. _`NFC Forum specification overview`: https://nfc-forum.org/our-work/specification-releases/specifications/
+
+.. ### Links to radio driver specs
+
+.. _`802.15.2-2003 specification`: https://standards.ieee.org/standard/802_15_2-2003.html
+
+.. ### Links to Thread and OpenThread
+
+.. _`OpenThread CoAP API`: https://openthread.io/reference/group/api-coap
+
+.. _`OpenThread CLI Reference`: https://github.com/openthread/openthread/blob/master/src/cli/README.md
+
+.. _`OpenThread.io`: https://openthread.io
+
+.. _`Thread Group`: https://www.threadgroup.org
+
+.. _`Thread protocol specification`: https://www.threadgroup.org/ThreadSpec
+
+.. _`Creative Commons 3.0 Attribution License`: https://creativecommons.org/licenses/by/3.0/
+
+.. _`shared by Google`: https://developers.google.com/readme/policies/
+
+.. _`Device Types on OpenThread portal`: https://openthread.io/guides/thread-primer/node-roles-and-types#device_types
+
+.. _`Thread Commissioning on OpenThread portal`: https://openthread.io/guides/build/commissioning
+
+.. _`Thread Group's Commissioning White Paper`: https://www.threadgroup.org/Portals/0/documents/support/CommissioningWhitePaper_658_2.pdf
+
+.. _`Commissioner CLI commands`: https://github.com/openthread/openthread/blob/master/src/cli/README_COMMISSIONER.md
+
+.. _`Joiner CLI commands`: https://github.com/openthread/openthread/blob/master/src/cli/README_JOINER.md
+
+.. _`wpantund`: https://github.com/openthread/wpantund/blob/master/README.md
+
+.. _`pyspinel`: https://github.com/openthread/pyspinel/blob/master/README.md
+
+.. ### Links to Zigbee
+
+.. _`Zigbee Alliance`: https://www.zigbeealliance.org
+
+.. _`Zigbee Specification`: https://zigbeealliance.org/developer_resources/zigbee-specification
+
+.. _`Stack commissioning start sequence`: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/zboss_api_doc/using_zigbee__z_c_l.html#stack_start_initiation
+
+.. ### Links to crypto specs
+
+.. _`NIST - AES`: https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/block-ciphers#AES
+
+.. _`NIST SP 800-38A`: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a.pdf
+
+.. _`NIST SP 800-38B`: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38b.pdf
+
+.. _`NIST - CCM`: https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/CAVP-TESTING-BLOCK-CIPHER-MODES#CCM
+
+.. _`The EAX Mode of Operation`: https://csrc.nist.gov/csrc/media/projects/block-cipher-techniques/documents/bcm/proposed-modes/eax/eax-spec.pdf
+
+.. _`NIST - GCM`: https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/CAVP-TESTING-BLOCK-CIPHER-MODES#GCMVS
+
+.. _`RFC 7539 - ChaCha20 and Poly1305 for IETF Protocols`: https://tools.ietf.org/html/rfc7539
+
+.. _`GEC 2: Test Vectors for SEC 1`: http://read.pudn.com/downloads168/doc/772358/TestVectorsforSEC%201-gec2.pdf
+
+.. _`NIST - ECDH`: https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/Component-Testing#ECCCDH
+
+.. _`RFC 7027 - ECC Brainpool Curves for TLS`: https://tools.ietf.org/html/rfc7027
+
+.. _`RFC 7748 - Elliptic Curves for Security`: https://tools.ietf.org/html/rfc7748
+
+.. _`NIST - ECDSA`: https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/Digital-Signatures#ecdsa2vs
+
+.. _`RFC 5639 - ECC Brainpool Standard Curves and Curve Generation`: https://tools.ietf.org/html/rfc5639
+
+.. _`RFC 8032 - Edwards-Curve Digital Signature Algorithm (EdDSA)`: https://tools.ietf.org/html/rfc8032
+
+.. _`NIST - SHA`: https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/Secure-Hashing#shavs
+
+.. _`NIST - HMAC`: https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/message-authentication
+
+.. _`RFC 5869 - HMAC-based Extract-and-Expand Key Derivation Function (HKDF)`: https://tools.ietf.org/html/rfc5869
+
+.. _`J-PAKE: Password-Authenticated Key Exchange by Juggling`: https://tools.ietf.org/html/rfc8236#section-3
+
+
+.. ### Links to other documentation
+
+.. _`Breathe documentation`: https://breathe.readthedocs.io/en/latest/directives.html#directives
+
+.. _`reStructuredText Primer`: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+
+.. _`ST25R3911B chip documentation`: https://www.st.com/resource/en/datasheet/st25r3911b.pdf
+
+.. _`TinyCBOR`: https://intel.github.io/tinycbor/current/
+
+.. _`generator expressions`: https://cmake.org/cmake/help/latest/manual/cmake-generator-expressions.7.html
+
+.. _`CMake documentation`: https://cmake.org/cmake/help/latest/
+
+.. _`VERBOSE`: https://cmake.org/cmake/help/latest/envvar/VERBOSE.html
+.. _`CMAKE_BUILD_PARALLEL_LEVEL`: https://cmake.org/cmake/help/latest/envvar/CMAKE_BUILD_PARALLEL_LEVEL.html
+
+.. _`AWS IoT Developer Guide`: https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html
+.. _`AWS IoT MQTT`: https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html
+.. _`AWS IoT Developer Guide: Basic Policy Variables`: https://docs.aws.amazon.com/iot/latest/developerguide/basic-policy-variables.html
+.. _`AWS IoT Developer Guide: Security Best Practices`: https://docs.aws.amazon.com/iot/latest/developerguide/security-best-practices.html
+.. _`AWS IoT jobs`:
+.. _`AWS IoT Developer Guide: Jobs`: https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html
+
+.. _`AWS Simple Storage Service (S3)`: https://docs.aws.amazon.com/s3/index.html
+.. _`AWS S3 Developer Guide: Using Bucket Policies and User Policies`: https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html
+.. _`AWS S3 Developer Guide: Bucket Policy Examples`: https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html
+
+
+.. _`RRC idle mode`: https://en.wikipedia.org/wiki/Radio_Resource_Control
+.. _`Klobuchar Ionospheric Model`: https://gssc.esa.int/navipedia/index.php/Klobuchar_Ionospheric_Model
+.. _`Ephemeris`: https://en.wikipedia.org/wiki/Ephemeris
+.. _`Almanac`: https://en.wikipedia.org/wiki/GPS_signals#Almanac
+
+.. _`SUPL context model`: https://www.openmobilealliance.org/release/SUPL/V1_0-20060127-C/OMA-AD-SUPL-V1_0-20060127-C.pdf#page=16
+
+.. _`LTE Positioning Protocol (LPP)`:  https://www.etsi.org/deliver/etsi_ts/136300_136399/136355/11.01.00_60/ts_136355v110100p.pdf#page=12
+
+.. _`SET-initiated SUPL collaboration`: https://www.openmobilealliance.org/release/SUPL/V2_0_4-20181213-A/OMA-TS-ULP-V2_0_4-20181213-A.pdf#page=128
+
+.. _`SET-Initiated Non-Roaming Successful Case (Proxy mode)`: https://www.openmobilealliance.org/release/SUPL/V2_0_4-20181213-A/OMA-TS-ULP-V2_0_4-20181213-A.pdf#page=129
+
+.. _`Secure Location Protocol (SLP)` : https://en.wikipedia.org/wiki/Service_Location_Protocol
+
+.. _`Verizon's Thingspace`: https://thingspace.verizon.com
+.. _`AT&T's IoT Platform`: https://iotplatform.att.com
+.. _`Pre-Shared Key (PSK)`: https://en.wikipedia.org/wiki/Pre-shared_key
+.. _`Mbed TLS`: https://en.wikipedia.org/wiki/Mbed_TLS
+
+.. _`CoAP response codes`: https://tools.ietf.org/html/rfc7252#section-12.1.2
+
+.. _`RFC 7252 - The Constrained Application Protocol`: https://tools.ietf.org/html/rfc7252
+
+.. _`tutorial on SSL.com`: https://support.ssl.com/Knowledgebase/Article/View/19/0/der-vs-crt-vs-cer-vs-pem-certificates-and-how-to-convert-them
+
+.. _`RFC959 File Transfer Protocol (FTP)`: https://tools.ietf.org/html/rfc959
+
+
+
+.. ### Links to specific files on GitHub
+
+.. _`nrf9160dk_nrf9160_partition_conf.dts`: https://github.com/nrfconnect/sdk-zephyr/blob/master/boards/arm/nrf9160dk_nrf9160/nrf9160dk_nrf9160_partition_conf.dts
+
+.. _`west manifest file`: https://github.com/nrfconnect/sdk-nrf/blob/master/west.yml
+
+.. _`tests/unity/example_test/CMakeLists.txt`: https://github.com/nrfconnect/sdk-nrf/blob/master/tests/unity/example_test/CMakeLists.txt
+
+.. _`nRF52820 CMakeLists.txt`: https://github.com/zephyrproject-rtos/zephyr/blob/master/boards/arm/nrf52833dk_nrf52820/CMakeLists.txt

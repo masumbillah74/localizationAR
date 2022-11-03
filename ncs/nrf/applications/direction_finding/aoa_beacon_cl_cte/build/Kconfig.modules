@@ -1,0 +1,6 @@
+osource "/home/rabbi/Desktop/RL_OCC/AoA/iq_samples_collect_ncs_07_08_2020/ncs/nrf/Kconfig.nrf"
+
+osource "/home/rabbi/Desktop/RL_OCC/AoA/iq_samples_collect_ncs_07_08_2020/ncs/bootloader/mcuboot/zephyr/Kconfig"
+
+osource "/home/rabbi/Desktop/RL_OCC/AoA/iq_samples_collect_ncs_07_08_2020/ncs/nrfxlib/Kconfig.nrfxlib"
+
