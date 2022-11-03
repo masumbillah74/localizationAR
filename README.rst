@@ -1,4 +1,38 @@
-# localizationAR
+.. _Indoor Localization using BLE 5.1:
+
+Indoor Localization in AR view using BLE 5.1
+#############################################
+
+Hardware Requirements
+************
+
+- At least 2 Nordic boards with Bluetooth LE 5.1 support:
+   * nRF52833 Development Kit boards (PCA10100)
+   * Use one board as a locator and rest as beacons
+- An antenna array:
+   * Texas Instrument BoostXL antenna array
+   * Connect the antenna array to the locator
+   * Read ncs/nrf/applications/direction_finding/aoa_locator_cl_cte/README.rst to know how to connect
+
+Building & Running
+************
+- Locator:
+	* Connect locator device 
+	* Change directory to: ncs/nrf/applications/direction_finding/aoa_beacon_cl_cte/
+	* Run the build & run command given below
+- Beacon:
+	* Disconnect locator and connect beacon
+	* Change directory to: ncs/nrf/applications/direction_finding/aoa_beacon_cl_cte/
+	* Run below build & run command command
+
+Build & run command
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: console
+
+   nrfjprog --family nRF52 -e #reset 
+   west build -b nrf52833dk_nrf52833 -d build
+   west flash
 
 - CD to directory
 - If git not installed: sudo apt install git
