@@ -7,7 +7,15 @@
 - Install pip: sudo apt-get install python3-pip
 - Install virtualenv: sudo pip3 install virtualenv
 - Create virtualenv: virtualenv virtualenv_name
-- Activate virtualenv: source virtualenv_name/bin/activate
+- Activate virtualenv: <br/>
+	source virtualenv_name/bin/activate <br/>
+	Tips: Create a script to activate easily. Save the script in home directory as <your_script_name>.sh. <br/>
+	-- Inside script put following lines:<br/>
+	#!/bin/bash<br/>
+	source <virtualenv_name/bin>/bin/activate<br/>
+	-- Set permission: chmod 777 ~/<your_script_name>.sh <br/>
+	-- From next time, in terminal just run the following command to activate your virtual environment <br/>
+	source ~/<your_script_name>.sh
 
 - Install jupyter notebook: <br/>
 	pip install jupyter notebook <br/>
