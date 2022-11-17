@@ -68,7 +68,7 @@ Script for recurrent activation:
 .. code-block:: console
 
 	#!/bin/bash
-	source <virtualenv_name/bin>/bin/activate
+	source <address/virtualenv_name>/bin/activate
 
 - Installation for beacon and locator: 
 	* Install J-Link Software and Documentation Pack: https://www.segger.com/downloads/jlink
