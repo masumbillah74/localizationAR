@@ -54,8 +54,8 @@ Steps:
 	* ``sudo apt-get install python3-pip``
 - Virtual environment:
 	* Before advancing through next steps it is strongly reccomended to use a virtual environment
-	* Install virtualenv: ``sudo pip3 install virtualenv``
-	* Create virtualenv: ``virtualenv virtualenv_name``
+	* Install virtualenv: ``sudo apt-get install python3-venv``
+	* Create virtualenv: ``python3 -m venv virtualenv_name``
 	* Activate virtualenv: ``source virtualenv_name/bin/activate``
 	
 	* **Tips:** Create a script for recurrent virtual environment activation.
